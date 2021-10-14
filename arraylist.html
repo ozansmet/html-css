@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>arraylist.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #0078D7; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #FF0000; }
+.cpp1-symbol { color: #000000; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 11pt Consolas;"><span class="cpp1-comment">/* This doc is for : Creating and sorting array list*/</span><span class="cpp1-space"> </span><span class="cpp1-comment">/* And also it's designed by kappasutra */
+</span><span class="cpp1-preprocessor">#include &lt;iostream&gt;
+</span><span class="cpp1-reservedword">using</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">namespace</span><span class="cpp1-space"> std;
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> main() {
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;enter number to declare array element:&quot;</span><span class="cpp1-space"> &lt;&lt;endl;
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> n;
+cin&gt;&gt;n;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Enter &quot;</span><span class="cpp1-space"> &lt;&lt; n &lt;&lt;</span><span class="cpp1-string">&quot;  number: &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> array[n];
+</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">; i&lt;n; i++) {
+	cin &gt;&gt; array[i];
+}
+cout&lt;&lt; endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;inputs are :\n &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> j=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">; j&lt;n; j++) {
+	cout&lt;&lt;</span><span class="cpp1-string">&quot; \t Value at&quot;</span><span class="cpp1-space"> &lt;&lt;j&lt;&lt;</span><span class="cpp1-string">&quot; Index : &quot;</span><span class="cpp1-symbol">&lt;&lt;array[j]&lt;&lt;endl;
+}
+cout &lt;&lt;endl;
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> swap;
+</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i2=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">; i2&lt;(n-</span><span class="cpp1-number">1</span><span class="cpp1-symbol">); i2++){
+	</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> j=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">; j&lt;(n-</span><span class="cpp1-number">1</span><span class="cpp1-symbol">); j++) {
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(array[j] &gt; array[j+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">]) {
+			swap = array[j];
+			array[j] = array[j+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">];
+			array[j+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">] = swap;
+}
+}
+}
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sorted array is :\n&quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i3=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">; i3&lt;n; i3++) {
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;\t Value at &quot;</span><span class="cpp1-symbol">&lt;&lt;i3&lt;&lt;</span><span class="cpp1-string">&quot; Index : &quot;</span><span class="cpp1-space"> &lt;&lt;array[i3]&lt;&lt;endl; 
+}
+</span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+}
+</span></span>
+</code></pre>
+</body>
+</html>

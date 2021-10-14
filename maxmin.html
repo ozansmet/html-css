@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>maxmin.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #0078D7; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #FF0000; }
+.cpp1-symbol { color: #000000; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 11pt Consolas;"><span class="cpp1-comment">/* This doc is for : Max and min value of sums*/</span><span class="cpp1-space"> </span><span class="cpp1-comment">/* And also it's designed by kappasutra */
+</span><span class="cpp1-preprocessor">#include &lt;iostream&gt;
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> main() {
+</span><span class="cpp1-reservedword">using</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">namespace</span><span class="cpp1-space"> std ; 
+cout&lt;&lt; </span><span class="cpp1-string">&quot;Please enter first number&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> a;
+cin&gt;&gt;a;
+system(</span><span class="cpp1-string">&quot;CLS&quot;</span><span class="cpp1-symbol">);
+cout&lt;&lt; </span><span class="cpp1-string">&quot;Please enter second number&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> b;
+cin&gt;&gt;b;
+system(</span><span class="cpp1-string">&quot;CLS&quot;</span><span class="cpp1-symbol">);
+cout&lt;&lt; </span><span class="cpp1-string">&quot;Please enter third number&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> c;
+cin&gt;&gt;c;
+system(</span><span class="cpp1-string">&quot;CLS&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> sumMax = a+b+c;
+</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">( (a+b) &gt;= (a+c) &amp;&amp; (a+c) &gt; (b+c)) { </span><span class="cpp1-comment">/*  a&gt;b&gt;c */</span><span class="cpp1-space"> </span><span class="cpp1-comment">/*a&gt;b&gt;=c */</span><span class="cpp1-space"> 
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the largest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; a*b &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the smallest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; b*c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of max two number : &quot;</span><span class="cpp1-space">  &lt;&lt; a+b &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of min two number : &quot;</span><span class="cpp1-space">  &lt;&lt; b+c &lt;&lt;endl; 	
+}
+</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">( (b+c) &gt;= (a+c) &amp;&amp; (b+a) &gt; (b+c)) { </span><span class="cpp1-comment">/* b&gt;a&gt;c */</span><span class="cpp1-space"> </span><span class="cpp1-comment">/* b&gt;=a&gt;c */
+</span><span class="cpp1-identifier">cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the largest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; b*a &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the smallest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; a*c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of max two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+b &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of min two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+c &lt;&lt;endl;
+}
+</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">( (b+c) &gt; (a+c) &amp;&amp; (b+a) &gt;= (b+c)) { </span><span class="cpp1-comment">/* b&gt;a&gt;c */</span><span class="cpp1-space"> </span><span class="cpp1-comment">/* b&gt;a=&gt;c */
+</span><span class="cpp1-identifier">cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the largest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; b*a &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the smallest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; a*c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of max two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+b &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of min two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+c &lt;&lt;endl;
+}
+</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">( (c+a) &gt; (b+a) &amp;&amp; (c+b) &gt;= (c+a) ) { </span><span class="cpp1-comment">/* c&gt;b&gt;a */</span><span class="cpp1-space"> </span><span class="cpp1-comment">/* c&gt;b&gt;=a*/
+</span><span class="cpp1-identifier">cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the largest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; b*c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the smallest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; a*b &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of max two number : &quot;</span><span class="cpp1-space"> &lt;&lt; b+c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of min two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+b &lt;&lt;endl;
+ }
+</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">( (c+a) &gt; (b+c) &amp;&amp; (b+c) &gt;= (b+a)) { </span><span class="cpp1-comment">/* c&gt;a&gt;b */</span><span class="cpp1-space"> </span><span class="cpp1-comment">/* c&gt;a&gt;=b */</span><span class="cpp1-space"> 
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the largest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; a*c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the smallest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; a*b &lt;&lt;endl; 
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of max two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of min two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+b &lt;&lt;endl;	
+}
+</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">( (b+a) &gt;= (a+c) &amp;&amp; (b+c) &gt; (b+a)) { </span><span class="cpp1-comment">/* b&gt;c&gt;a */</span><span class="cpp1-space"> 
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the largest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; b*c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;The result of multiplications of the smallest numbers is : &quot;</span><span class="cpp1-space"> &lt;&lt; a*c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of max two number : &quot;</span><span class="cpp1-space"> &lt;&lt; b+c &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of min two number : &quot;</span><span class="cpp1-space"> &lt;&lt; a+c &lt;&lt;endl; 
+}
+</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(a*b*c == </span><span class="cpp1-number">3</span><span class="cpp1-symbol">*a)
+cout&lt;&lt;</span><span class="cpp1-string">&quot;Sums of these three same numbers :&quot;</span><span class="cpp1-space"> &lt;&lt; sumMax &lt;&lt;endl;
+cout&lt;&lt;</span><span class="cpp1-string">&quot;First number is :&quot;</span><span class="cpp1-space"> &lt;&lt; a &lt;&lt;</span><span class="cpp1-string">&quot;\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Second number is :&quot;</span><span class="cpp1-symbol">&lt;&lt; b &lt;&lt; </span><span class="cpp1-string">&quot;\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Third number is :&quot;</span><span class="cpp1-space"> &lt;&lt; c &lt;&lt;</span><span class="cpp1-string">&quot;\n&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+}
+
+
+</span></span>
+</code></pre>
+</body>
+</html>
